@@ -5,13 +5,19 @@ See http://www.uugear.com/doc/WittyPi2_UserManual.pdf for manual
 
 6 PIN Header
 
-Witty PI 2       Arduino Uno
-GND              GND
-Switch           D12 (Through switching circuit only - do not connect directly)
-Vbat             A0
-INT              A1
-LED              -
-Vout             A2
+Witty PI 2 <---> Arduino Uno
+
+GND <---> GND
+
+Switch <--- D12 (Through switching circuit only - do not connect directly)
+
+Vbat ---> A0
+
+INT ---> A1
+
+LED --- Not Connected
+
+Vout ---> A2
 
 Compile and monitor serial connection
 
