@@ -7,7 +7,6 @@ boolean stringComplete = false;  // whether the string is complete
 char command;
 int led = 13;
 int wittySwitch = 12;  // SWITCH = Switch power (switch RPI off if on and vice verse)
-int vBatteryInput = A0;// Vbat = Battery voltage
 int alarm = A1;        // INT = Alarm (active low)
 int vOut = A2;        // Vout = RPI Power
 float sensorValue;
@@ -60,11 +59,6 @@ void loop()
   }
   else
   {
-    sensorValue = analogRead(vBatteryInput) * 5.0/1023;
-    dtostrf(sensorValue,7, 3, displayValue);
-    Serial.println("Witty Battery = " + String(displayValue) + " V");
-    delay(1);  // Stability
-    
     sensorValue = analogRead(alarm) * 5.0/1023;
     dtostrf(sensorValue,7, 3, displayValue);
     Serial.println("Alarm = " + String(displayValue) + " V");
