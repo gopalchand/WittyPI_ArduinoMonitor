@@ -11,7 +11,7 @@ GND <---> GND
 
 Switch <--- D12 (Through switching circuit only - do not connect directly)
 
-Vbat ---> A0
+Vbat --- Not Connected
 
 INT ---> A1
 
